@@ -1,11 +1,12 @@
 name: Test against Rails main
 
-on:
-  schedule:
-    - cron: "0 0 * * *" # Run every day at 00:00 UTC
-  workflow_dispatch:
-  push:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   schedule:
+#     - cron: "0 0 * * *" # Run every day at 00:00 UTC
+#   workflow_dispatch:
+#   push:
+# 
 jobs:
   specs:
     runs-on: ubuntu-latest
